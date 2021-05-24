@@ -18,3 +18,4 @@ const backpack = {
 
 console.log("The backpack object:", backpack);
 console.log("The poacketNum value:", backpack.poacketNum)
+
