@@ -1,21 +1,14 @@
-const backpack = {
-    name: "Everyday Backpack",
-    color: "grey",
-    poacketNum: 15,
-    strapLength: {
-        left: 26,
-        right: 26,
-    },
-    lidopen: false,
-    togglelid: function(lidStatus) {
-        this.lidopen = lidStatus;
-    },
-    newSrapLength: function (lenghtLeft, lenghtRight) {
-        this.strapLength.left = lenghtLeft;
-        this.strapLength.right = lenghtRight;
-    },
-};
+import Backpack from "./backpack.js";
 
-console.log("The backpack object:", backpack);
-console.log("The poacketNum value:", backpack.poacketNum)
+const everydayPack = new Backpack(
+    "Everyday Backpack",
+    30,
+    "grey",
+    15,
+    26,
+    26,
+    false
+);
 
+console.log("The everydayPack object:", everydayPack);
+console.log("The packetNum Vaule:", everydayPack.pocketNum);
